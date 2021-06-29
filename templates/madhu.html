@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Abnormalities in Spine Detection</h2> <br/><br/>
+
+<div>
+	<center>
+	<table cellspacing="10" cellpadding="5">
+	 
+	  <tr>
+			<td style="padding:50px;">
+				<h3>Axial View Prediction</h3>
+				<a href="/axialpage"><img src="{{url_for('static',filename='28.jpg')}}" title="Axial View"/></a>
+			</td>
+			
+			<td style="padding: 50px;">
+				<h3>Sagital View Prediction</h3>
+				<a href="/sagitalpage"><img src="{{url_for('static',filename='20.jpg')}}" title="Sagital View"/></a>
+			</td>
+	  </tr>
+	</table>
+    </center>
+	
+	
+
+</div>
+
+{% endblock %}
